@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SQLiteExample</string>
+    <string name="title_text">Контроль бюджета</string>
+    <string name="add_text">Добавить данные</string>
+    <string name="get_text">Получить данные</string>
+    <string name="add_title">Заполните поля</string>
+    <string name="what_hint">Что вы купили?</string>
+    <string name="comm_text">Комментарий (не обязательно)</string>
+    <string name="choise_cat_text">Выберите категорию</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D8E8D0">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_text"
+        android:textColor="#0F2902"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/title_budget"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_text"
+        android:textColor="#E3A6A6"
+        android:textSize="18sp"
+        android:background="#072E04"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/getActivButton"
+        app:layout_constraintHorizontal_weight="1"
+        android:id="@+id/addActivButton"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_text"
+        android:textColor="#E3A6A6"
+        android:textSize="18sp"
+        android:background="#072E04"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toEndOf="@id/addActivButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:id="@+id/getActivButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
