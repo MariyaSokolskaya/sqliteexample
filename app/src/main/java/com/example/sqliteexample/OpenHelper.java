@@ -15,6 +15,10 @@ public class OpenHelper extends SQLiteOpenHelper {
     public static final String BUDGET_MONEY = "money";
     public static final String BUDGET_DATE = "date";
     public static final String BUDGET_COMMENT = "comment";
+    public static final String BUDGET_CATEGORY_ID = "id_category";
+    public static final String DATABASE_TABLE_CATEGORY = "Category";
+    public static final String CATEGORY_ID = "_id";
+    public static final String CATEGORY_CAT = "category_purchase";
 
     public OpenHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -27,7 +31,12 @@ public class OpenHelper extends SQLiteOpenHelper {
                 BUDGET_PURCHASE + " TEXT, " +
                 BUDGET_DATE + " TEXT, " +
                 BUDGET_MONEY + " REAL, " +
+                BUDGET_CATEGORY_ID + " INTEGER, " +
                 BUDGET_COMMENT + " TEXT);";
+        sqLiteDatabase.execSQL(query);
+        query = "CREATE TABLE " + DATABASE_TABLE_CATEGORY +
+                "(" + CATEGORY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                CATEGORY_CAT + " TEXT);";
         sqLiteDatabase.execSQL(query);
     }
 

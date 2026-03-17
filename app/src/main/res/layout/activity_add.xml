@@ -50,7 +50,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/comm_text"
+        android:hint="@string/date_text"
         android:textColor="#0F2902"
         android:textSize="18sp"
         android:textStyle="bold|italic"
@@ -59,6 +59,19 @@
         android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/money_text"
+        android:id="@+id/date_text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/comm_text"
+        android:textColor="#0F2902"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_text"
         android:id="@+id/comment_text"/>
     <TextView
         android:layout_width="match_parent"
@@ -81,5 +94,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/choise_cat"
         android:id="@+id/cat_list"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E3A6A6"
+        android:textSize="18sp"
+        android:background="#072E04"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="@string/add_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cat_list"
+        android:id="@+id/add_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
